@@ -127,42 +127,42 @@
 <library name="sta350bw">
 <packages>
 <package name="POWERSSO-36">
-<smd name="P$1" x="-4.75" y="4.25" dx="2" dy="0.35" layer="1"/>
-<smd name="P$2" x="-4.75" y="3.75" dx="2" dy="0.35" layer="1"/>
-<smd name="P$3" x="-4.75" y="3.25" dx="2" dy="0.35" layer="1"/>
-<smd name="P$4" x="-4.75" y="2.75" dx="2" dy="0.35" layer="1"/>
-<smd name="P$5" x="-4.75" y="2.25" dx="2" dy="0.35" layer="1"/>
-<smd name="P$6" x="-4.75" y="1.75" dx="2" dy="0.35" layer="1"/>
-<smd name="P$7" x="-4.75" y="1.25" dx="2" dy="0.35" layer="1"/>
-<smd name="P$8" x="-4.75" y="0.75" dx="2" dy="0.35" layer="1"/>
-<smd name="P$9" x="-4.75" y="0.25" dx="2" dy="0.35" layer="1"/>
-<smd name="P$10" x="-4.75" y="-0.25" dx="2" dy="0.35" layer="1"/>
-<smd name="P$11" x="-4.75" y="-0.75" dx="2" dy="0.35" layer="1"/>
-<smd name="P$12" x="-4.75" y="-1.25" dx="2" dy="0.35" layer="1"/>
-<smd name="P$13" x="-4.75" y="-1.75" dx="2" dy="0.35" layer="1"/>
-<smd name="P$14" x="-4.75" y="-2.25" dx="2" dy="0.35" layer="1"/>
-<smd name="P$15" x="-4.75" y="-2.75" dx="2" dy="0.35" layer="1"/>
-<smd name="P$16" x="-4.75" y="-3.25" dx="2" dy="0.35" layer="1"/>
-<smd name="P$17" x="-4.75" y="-3.75" dx="2" dy="0.35" layer="1"/>
-<smd name="P$18" x="-4.75" y="-4.25" dx="2" dy="0.35" layer="1"/>
-<smd name="P$19" x="4.75" y="-4.25" dx="2" dy="0.35" layer="1"/>
-<smd name="P$20" x="4.75" y="-3.75" dx="2" dy="0.35" layer="1"/>
-<smd name="P$21" x="4.75" y="-3.25" dx="2" dy="0.35" layer="1"/>
-<smd name="P$22" x="4.75" y="-2.75" dx="2" dy="0.35" layer="1"/>
-<smd name="P$23" x="4.75" y="-2.25" dx="2" dy="0.35" layer="1"/>
-<smd name="P$24" x="4.75" y="-1.75" dx="2" dy="0.35" layer="1"/>
-<smd name="P$25" x="4.75" y="-1.25" dx="2" dy="0.35" layer="1"/>
-<smd name="P$26" x="4.75" y="-0.75" dx="2" dy="0.35" layer="1"/>
-<smd name="P$27" x="4.75" y="-0.25" dx="2" dy="0.35" layer="1"/>
-<smd name="P$28" x="4.75" y="0.25" dx="2" dy="0.35" layer="1"/>
-<smd name="P$29" x="4.75" y="0.75" dx="2" dy="0.35" layer="1"/>
-<smd name="P$30" x="4.75" y="1.25" dx="2" dy="0.35" layer="1"/>
-<smd name="P$31" x="4.75" y="1.75" dx="2" dy="0.35" layer="1"/>
-<smd name="P$32" x="4.75" y="2.25" dx="2" dy="0.35" layer="1"/>
-<smd name="P$33" x="4.75" y="2.75" dx="2" dy="0.35" layer="1"/>
-<smd name="P$34" x="4.75" y="3.25" dx="2" dy="0.35" layer="1"/>
-<smd name="P$35" x="4.75" y="3.75" dx="2" dy="0.35" layer="1"/>
-<smd name="P$36" x="4.75" y="4.25" dx="2" dy="0.35" layer="1"/>
+<smd name="P$1" x="-4.75" y="4.25" dx="2" dy="0.345" layer="1"/>
+<smd name="P$2" x="-4.75" y="3.75" dx="2" dy="0.345" layer="1"/>
+<smd name="P$3" x="-4.75" y="3.25" dx="2" dy="0.345" layer="1"/>
+<smd name="P$4" x="-4.75" y="2.75" dx="2" dy="0.345" layer="1"/>
+<smd name="P$5" x="-4.75" y="2.25" dx="2" dy="0.345" layer="1"/>
+<smd name="P$6" x="-4.75" y="1.75" dx="2" dy="0.345" layer="1"/>
+<smd name="P$7" x="-4.75" y="1.25" dx="2" dy="0.345" layer="1"/>
+<smd name="P$8" x="-4.75" y="0.75" dx="2" dy="0.345" layer="1"/>
+<smd name="P$9" x="-4.75" y="0.25" dx="2" dy="0.345" layer="1"/>
+<smd name="P$10" x="-4.75" y="-0.25" dx="2" dy="0.345" layer="1"/>
+<smd name="P$11" x="-4.75" y="-0.75" dx="2" dy="0.345" layer="1"/>
+<smd name="P$12" x="-4.75" y="-1.25" dx="2" dy="0.345" layer="1"/>
+<smd name="P$13" x="-4.75" y="-1.75" dx="2" dy="0.345" layer="1"/>
+<smd name="P$14" x="-4.75" y="-2.25" dx="2" dy="0.345" layer="1"/>
+<smd name="P$15" x="-4.75" y="-2.75" dx="2" dy="0.345" layer="1"/>
+<smd name="P$16" x="-4.75" y="-3.25" dx="2" dy="0.345" layer="1"/>
+<smd name="P$17" x="-4.75" y="-3.75" dx="2" dy="0.345" layer="1"/>
+<smd name="P$18" x="-4.75" y="-4.25" dx="2" dy="0.345" layer="1"/>
+<smd name="P$19" x="4.75" y="-4.25" dx="2" dy="0.345" layer="1"/>
+<smd name="P$20" x="4.75" y="-3.75" dx="2" dy="0.345" layer="1"/>
+<smd name="P$21" x="4.75" y="-3.25" dx="2" dy="0.345" layer="1"/>
+<smd name="P$22" x="4.75" y="-2.75" dx="2" dy="0.345" layer="1"/>
+<smd name="P$23" x="4.75" y="-2.25" dx="2" dy="0.345" layer="1"/>
+<smd name="P$24" x="4.75" y="-1.75" dx="2" dy="0.345" layer="1"/>
+<smd name="P$25" x="4.75" y="-1.25" dx="2" dy="0.345" layer="1"/>
+<smd name="P$26" x="4.75" y="-0.75" dx="2" dy="0.345" layer="1"/>
+<smd name="P$27" x="4.75" y="-0.25" dx="2" dy="0.345" layer="1"/>
+<smd name="P$28" x="4.75" y="0.25" dx="2" dy="0.345" layer="1"/>
+<smd name="P$29" x="4.75" y="0.75" dx="2" dy="0.345" layer="1"/>
+<smd name="P$30" x="4.75" y="1.25" dx="2" dy="0.345" layer="1"/>
+<smd name="P$31" x="4.75" y="1.75" dx="2" dy="0.345" layer="1"/>
+<smd name="P$32" x="4.75" y="2.25" dx="2" dy="0.345" layer="1"/>
+<smd name="P$33" x="4.75" y="2.75" dx="2" dy="0.345" layer="1"/>
+<smd name="P$34" x="4.75" y="3.25" dx="2" dy="0.345" layer="1"/>
+<smd name="P$35" x="4.75" y="3.75" dx="2" dy="0.345" layer="1"/>
+<smd name="P$36" x="4.75" y="4.25" dx="2" dy="0.345" layer="1"/>
 <smd name="PAD" x="0" y="0" dx="4.4" dy="6.8" layer="1" thermals="no"/>
 <wire x1="-3.7" y1="5.2" x2="3.7" y2="5.2" width="0.127" layer="21"/>
 <wire x1="3.7" y1="5.2" x2="3.7" y2="-5.2" width="0.127" layer="21"/>
@@ -17957,8 +17957,8 @@ High-power, low thermal resistance package.</description>
 <part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
 <part name="SV2" library="con-lstb" deviceset="MA03-1" device=""/>
 <part name="GND34" library="supply1" deviceset="GND" device=""/>
-<part name="C37" library="rcl" deviceset="C-EU" device="C0805" value="1u"/>
-<part name="C38" library="rcl" deviceset="C-EU" device="C0805" value="1u"/>
+<part name="C37" library="rcl" deviceset="C-EU" device="C1206" value="1u"/>
+<part name="C38" library="rcl" deviceset="C-EU" device="C1206" value="1u"/>
 <part name="C39" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="C40" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="P+16" library="supply1" deviceset="+24V" device=""/>
@@ -18766,14 +18766,14 @@ High-power, low thermal resistance package.</description>
 <label x="2.54" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="GND_REG" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND_REG"/>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="241.3" y1="33.02" x2="248.92" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="VDD" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="VDD"/>
 <wire x1="241.3" y1="30.48" x2="246.38" y2="30.48" width="0.1524" layer="91"/>
@@ -18782,7 +18782,7 @@ High-power, low thermal resistance package.</description>
 <wire x1="246.38" y1="25.4" x2="248.92" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="VSS" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="VSS"/>
 <wire x1="241.3" y1="58.42" x2="246.38" y2="58.42" width="0.1524" layer="91"/>
@@ -18791,7 +18791,7 @@ High-power, low thermal resistance package.</description>
 <wire x1="246.38" y1="63.5" x2="248.92" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="VCC_REG" class="0">
 <segment>
 <pinref part="C12" gate="G$1" pin="2"/>
 <pinref part="U$1" gate="G$1" pin="VCC_REG"/>
@@ -18890,7 +18890,7 @@ High-power, low thermal resistance package.</description>
 <wire x1="271.78" y1="30.48" x2="271.78" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="OUT2B" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="OUT2B"/>
 <wire x1="241.3" y1="53.34" x2="266.7" y2="53.34" width="0.1524" layer="91"/>
@@ -18903,7 +18903,7 @@ High-power, low thermal resistance package.</description>
 <junction x="271.78" y="71.12"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="OUT1A" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="OUT1A"/>
 <wire x1="241.3" y1="35.56" x2="266.7" y2="35.56" width="0.1524" layer="91"/>
@@ -18916,7 +18916,7 @@ High-power, low thermal resistance package.</description>
 <junction x="271.78" y="17.78"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="SPKR2B" class="0">
 <segment>
 <pinref part="C18" gate="G$1" pin="1"/>
 <wire x1="287.02" y1="66.04" x2="287.02" y2="71.12" width="0.1524" layer="91"/>
@@ -18942,7 +18942,7 @@ High-power, low thermal resistance package.</description>
 <junction x="297.18" y="66.04"/>
 </segment>
 </net>
-<net name="N$20" class="0">
+<net name="SPKR2A" class="0">
 <segment>
 <pinref part="L4" gate="G$1" pin="2"/>
 <wire x1="284.48" y1="45.72" x2="287.02" y2="45.72" width="0.1524" layer="91"/>
@@ -18968,7 +18968,7 @@ High-power, low thermal resistance package.</description>
 <junction x="297.18" y="50.8"/>
 </segment>
 </net>
-<net name="N$14" class="0">
+<net name="OUT2A" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="OUT2A"/>
 <pinref part="L4" gate="G$1" pin="1"/>
@@ -18979,7 +18979,7 @@ High-power, low thermal resistance package.</description>
 <junction x="271.78" y="45.72"/>
 </segment>
 </net>
-<net name="N$16" class="0">
+<net name="OUT1B" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="OUT1B"/>
 <pinref part="L3" gate="G$1" pin="1"/>
@@ -18990,7 +18990,7 @@ High-power, low thermal resistance package.</description>
 <junction x="271.78" y="43.18"/>
 </segment>
 </net>
-<net name="N$25" class="0">
+<net name="SPKR1B" class="0">
 <segment>
 <pinref part="L3" gate="G$1" pin="2"/>
 <pinref part="C22" gate="G$1" pin="1"/>
@@ -19004,7 +19004,7 @@ High-power, low thermal resistance package.</description>
 <junction x="320.04" y="43.18"/>
 </segment>
 </net>
-<net name="N$26" class="0">
+<net name="SPKR1A" class="0">
 <segment>
 <pinref part="L1" gate="G$1" pin="2"/>
 <pinref part="C24" gate="G$1" pin="1"/>
