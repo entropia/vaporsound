@@ -134,7 +134,6 @@
 <hole x="3" y="3" drill="3.2"/>
 <hole x="88" y="3" drill="3.2"/>
 <hole x="88" y="77" drill="3.2"/>
-<rectangle x1="47.117" y1="42.672" x2="47.244" y2="43.053" layer="41"/>
 </plain>
 <libraries>
 <library name="sta350bw">
@@ -2364,6 +2363,102 @@ design rules under a new name.</description>
 <via x="34.036" y="50.165" extent="1-16" drill="0.3"/>
 <via x="33.909" y="36.957" extent="1-16" drill="0.3"/>
 <contactref element="R16" pad="2"/>
+<via x="43.18" y="43.942" extent="1-16" drill="0.3"/>
+<via x="43.18" y="43.18" extent="1-16" drill="0.3"/>
+<via x="43.942" y="43.942" extent="1-16" drill="0.3"/>
+<via x="43.942" y="43.18" extent="1-16" drill="0.3"/>
+<via x="44.704" y="43.942" extent="1-16" drill="0.3"/>
+<via x="45.466" y="43.942" extent="1-16" drill="0.3"/>
+<via x="46.228" y="43.942" extent="1-16" drill="0.3"/>
+<via x="42.418" y="43.942" extent="1-16" drill="0.3"/>
+<via x="41.656" y="43.942" extent="1-16" drill="0.3"/>
+<via x="40.894" y="43.942" extent="1-16" drill="0.3"/>
+<via x="40.894" y="44.704" extent="1-16" drill="0.3"/>
+<via x="40.894" y="45.466" extent="1-16" drill="0.3"/>
+<via x="40.894" y="46.228" extent="1-16" drill="0.3"/>
+<via x="40.894" y="46.99" extent="1-16" drill="0.3"/>
+<via x="40.894" y="47.752" extent="1-16" drill="0.3"/>
+<via x="41.656" y="47.752" extent="1-16" drill="0.3"/>
+<via x="42.418" y="47.752" extent="1-16" drill="0.3"/>
+<via x="40.894" y="43.18" extent="1-16" drill="0.3"/>
+<via x="40.894" y="42.418" extent="1-16" drill="0.3"/>
+<via x="40.894" y="41.656" extent="1-16" drill="0.3"/>
+<via x="40.894" y="40.894" extent="1-16" drill="0.3"/>
+<via x="40.894" y="40.132" extent="1-16" drill="0.3"/>
+<via x="40.894" y="39.37" extent="1-16" drill="0.3"/>
+<via x="41.656" y="39.37" extent="1-16" drill="0.3"/>
+<via x="42.418" y="39.37" extent="1-16" drill="0.3"/>
+<via x="43.18" y="39.37" extent="1-16" drill="0.3"/>
+<via x="43.942" y="39.37" extent="1-16" drill="0.3"/>
+<via x="44.704" y="39.37" extent="1-16" drill="0.3"/>
+<via x="45.466" y="39.37" extent="1-16" drill="0.3"/>
+<via x="46.228" y="39.37" extent="1-16" drill="0.3"/>
+<via x="46.228" y="40.132" extent="1-16" drill="0.3"/>
+<via x="46.228" y="40.894" extent="1-16" drill="0.3"/>
+<via x="46.228" y="41.656" extent="1-16" drill="0.3"/>
+<via x="46.228" y="42.418" extent="1-16" drill="0.3"/>
+<via x="46.228" y="43.18" extent="1-16" drill="0.3"/>
+<via x="41.656" y="43.18" extent="1-16" drill="0.3"/>
+<via x="42.418" y="43.18" extent="1-16" drill="0.3"/>
+<via x="44.704" y="43.18" extent="1-16" drill="0.3"/>
+<via x="45.466" y="43.18" extent="1-16" drill="0.3"/>
+<via x="43.18" y="47.752" extent="1-16" drill="0.3"/>
+<via x="43.942" y="47.752" extent="1-16" drill="0.3"/>
+<via x="44.704" y="47.752" extent="1-16" drill="0.3"/>
+<via x="45.466" y="47.752" extent="1-16" drill="0.3"/>
+<via x="46.228" y="47.752" extent="1-16" drill="0.3"/>
+<via x="46.228" y="46.99" extent="1-16" drill="0.3"/>
+<via x="46.228" y="46.228" extent="1-16" drill="0.3"/>
+<via x="46.228" y="45.466" extent="1-16" drill="0.3"/>
+<via x="46.228" y="44.704" extent="1-16" drill="0.3"/>
+<via x="45.466" y="44.704" extent="1-16" drill="0.3"/>
+<via x="45.466" y="45.466" extent="1-16" drill="0.3"/>
+<via x="45.466" y="46.228" extent="1-16" drill="0.3"/>
+<via x="45.466" y="46.99" extent="1-16" drill="0.3"/>
+<via x="44.704" y="46.99" extent="1-16" drill="0.3"/>
+<via x="43.942" y="46.99" extent="1-16" drill="0.3"/>
+<via x="43.18" y="46.99" extent="1-16" drill="0.3"/>
+<via x="42.418" y="46.99" extent="1-16" drill="0.3"/>
+<via x="41.656" y="46.99" extent="1-16" drill="0.3"/>
+<via x="41.656" y="46.228" extent="1-16" drill="0.3"/>
+<via x="42.418" y="46.228" extent="1-16" drill="0.3"/>
+<via x="43.18" y="46.228" extent="1-16" drill="0.3"/>
+<via x="43.942" y="46.228" extent="1-16" drill="0.3"/>
+<via x="44.704" y="46.228" extent="1-16" drill="0.3"/>
+<via x="41.656" y="45.466" extent="1-16" drill="0.3"/>
+<via x="41.656" y="44.704" extent="1-16" drill="0.3"/>
+<via x="41.656" y="42.418" extent="1-16" drill="0.3"/>
+<via x="41.656" y="41.656" extent="1-16" drill="0.3"/>
+<via x="41.656" y="40.894" extent="1-16" drill="0.3"/>
+<via x="41.656" y="40.132" extent="1-16" drill="0.3"/>
+<via x="42.418" y="40.132" extent="1-16" drill="0.3"/>
+<via x="43.18" y="40.132" extent="1-16" drill="0.3"/>
+<via x="43.942" y="40.132" extent="1-16" drill="0.3"/>
+<via x="44.704" y="40.132" extent="1-16" drill="0.3"/>
+<via x="45.466" y="40.132" extent="1-16" drill="0.3"/>
+<via x="45.466" y="40.894" extent="1-16" drill="0.3"/>
+<via x="45.466" y="41.656" extent="1-16" drill="0.3"/>
+<via x="45.466" y="42.418" extent="1-16" drill="0.3"/>
+<via x="42.418" y="44.704" extent="1-16" drill="0.3"/>
+<via x="43.18" y="44.704" extent="1-16" drill="0.3"/>
+<via x="43.942" y="44.704" extent="1-16" drill="0.3"/>
+<via x="44.704" y="44.704" extent="1-16" drill="0.3"/>
+<via x="44.704" y="45.466" extent="1-16" drill="0.3"/>
+<via x="43.942" y="45.466" extent="1-16" drill="0.3"/>
+<via x="43.18" y="45.466" extent="1-16" drill="0.3"/>
+<via x="42.418" y="45.466" extent="1-16" drill="0.3"/>
+<via x="42.418" y="42.418" extent="1-16" drill="0.3"/>
+<via x="43.18" y="42.418" extent="1-16" drill="0.3"/>
+<via x="43.942" y="42.418" extent="1-16" drill="0.3"/>
+<via x="44.704" y="42.418" extent="1-16" drill="0.3"/>
+<via x="44.704" y="41.656" extent="1-16" drill="0.3"/>
+<via x="44.704" y="40.894" extent="1-16" drill="0.3"/>
+<via x="42.418" y="41.656" extent="1-16" drill="0.3"/>
+<via x="42.418" y="40.894" extent="1-16" drill="0.3"/>
+<via x="43.18" y="40.894" extent="1-16" drill="0.3"/>
+<via x="43.942" y="40.894" extent="1-16" drill="0.3"/>
+<via x="43.942" y="41.656" extent="1-16" drill="0.3"/>
+<via x="43.18" y="41.656" extent="1-16" drill="0.3"/>
 </signal>
 <signal name="EPAD">
 </signal>
