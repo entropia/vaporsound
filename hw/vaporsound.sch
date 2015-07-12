@@ -18062,8 +18062,8 @@ Based on the previous libraries:
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
-<part name="U$4" library="con-lstb-mod" deviceset="MA23-2" device=""/>
-<part name="SV1" library="con-lstb" deviceset="MA04-1" device=""/>
+<part name="P9" library="con-lstb-mod" deviceset="MA23-2" device=""/>
+<part name="DISP" library="con-lstb" deviceset="MA04-1" device=""/>
 <part name="GND30" library="supply1" deviceset="GND" device=""/>
 <part name="GND31" library="supply1" deviceset="GND" device=""/>
 <part name="GND32" library="supply1" deviceset="GND" device=""/>
@@ -18086,7 +18086,7 @@ Based on the previous libraries:
 <part name="R14" library="rcl" deviceset="R-EU_" device="R0603" value="4k7"/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
-<part name="SV2" library="con-lstb" deviceset="MA03-1" device=""/>
+<part name="IN" library="con-lstb" deviceset="MA03-1" device=""/>
 <part name="GND34" library="supply1" deviceset="GND" device=""/>
 <part name="C37" library="rcl" deviceset="C-EU" device="C1206" value="1u"/>
 <part name="C38" library="rcl" deviceset="C-EU" device="C1206" value="1u"/>
@@ -18118,9 +18118,9 @@ Based on the previous libraries:
 <part name="GND43" library="supply1" deviceset="GND" device=""/>
 <part name="R16" library="rcl" deviceset="R-EU_" device="R0603" value="0r"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="X1" library="con-phoenix-508" deviceset="MSTBV2" device=""/>
-<part name="X2" library="con-phoenix-508" deviceset="MSTBV2" device=""/>
-<part name="X3" library="con-phoenix-508" deviceset="MSTBV2" device=""/>
+<part name="SPKR1" library="con-phoenix-508" deviceset="MSTBV2" device=""/>
+<part name="SPKR2" library="con-phoenix-508" deviceset="MSTBV2" device=""/>
+<part name="PWR" library="con-phoenix-508" deviceset="MSTBV2" device=""/>
 <part name="P+21" library="supply1" deviceset="+24V" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="L7" library="rcl" deviceset="R-EU_" device="R0805"/>
@@ -18233,8 +18233,8 @@ Based on the previous libraries:
 <instance part="GND27" gate="1" x="-5.08" y="35.56"/>
 <instance part="GND28" gate="1" x="2.54" y="35.56"/>
 <instance part="GND29" gate="1" x="10.16" y="35.56"/>
-<instance part="U$4" gate="G$1" x="22.86" y="160.02" rot="R180"/>
-<instance part="SV1" gate="1" x="284.48" y="142.24" rot="R180"/>
+<instance part="P9" gate="G$1" x="22.86" y="160.02" rot="R180"/>
+<instance part="DISP" gate="1" x="284.48" y="142.24" rot="R180"/>
 <instance part="GND30" gate="1" x="7.62" y="96.52"/>
 <instance part="GND31" gate="1" x="27.94" y="96.52"/>
 <instance part="GND32" gate="1" x="27.94" y="157.48" rot="R90"/>
@@ -18257,7 +18257,7 @@ Based on the previous libraries:
 <instance part="R14" gate="G$1" x="264.16" y="152.4" rot="R90"/>
 <instance part="+3V11" gate="G$1" x="251.46" y="152.4"/>
 <instance part="+3V12" gate="G$1" x="251.46" y="137.16"/>
-<instance part="SV2" gate="G$1" x="215.9" y="137.16" rot="MR0"/>
+<instance part="IN" gate="G$1" x="215.9" y="137.16" rot="MR0"/>
 <instance part="GND34" gate="1" x="205.74" y="137.16" rot="R270"/>
 <instance part="C37" gate="G$1" x="248.92" y="86.36"/>
 <instance part="C38" gate="G$1" x="259.08" y="86.36"/>
@@ -18289,12 +18289,12 @@ Based on the previous libraries:
 <instance part="GND43" gate="1" x="152.4" y="73.66" rot="MR0"/>
 <instance part="R16" gate="G$1" x="144.78" y="48.26" rot="R180"/>
 <instance part="GND16" gate="1" x="139.7" y="45.72" rot="MR0"/>
-<instance part="X1" gate="-1" x="327.66" y="17.78" rot="R180"/>
-<instance part="X1" gate="-2" x="327.66" y="43.18" rot="R180"/>
-<instance part="X2" gate="-1" x="327.66" y="45.72" rot="R180"/>
-<instance part="X2" gate="-2" x="327.66" y="71.12" rot="R180"/>
-<instance part="X3" gate="-1" x="43.18" y="66.04"/>
-<instance part="X3" gate="-2" x="71.12" y="66.04"/>
+<instance part="SPKR1" gate="-1" x="327.66" y="17.78" rot="R180"/>
+<instance part="SPKR1" gate="-2" x="327.66" y="43.18" rot="R180"/>
+<instance part="SPKR2" gate="-1" x="327.66" y="45.72" rot="R180"/>
+<instance part="SPKR2" gate="-2" x="327.66" y="71.12" rot="R180"/>
+<instance part="PWR" gate="-1" x="43.18" y="66.04"/>
+<instance part="PWR" gate="-2" x="71.12" y="66.04"/>
 <instance part="P+21" gate="1" x="78.74" y="66.04" rot="R270"/>
 <instance part="GND15" gate="1" x="48.26" y="63.5"/>
 <instance part="L7" gate="G$1" x="-20.32" y="45.72"/>
@@ -18486,39 +18486,39 @@ Based on the previous libraries:
 <pinref part="GND29" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="43"/>
+<pinref part="P9" gate="G$1" pin="43"/>
 <pinref part="GND30" gate="1" pin="GND"/>
 <wire x1="10.16" y1="104.14" x2="7.62" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="7.62" y1="104.14" x2="7.62" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="45"/>
+<pinref part="P9" gate="G$1" pin="45"/>
 <wire x1="7.62" y1="101.6" x2="7.62" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="101.6" x2="7.62" y2="101.6" width="0.1524" layer="91"/>
 <junction x="7.62" y="101.6"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="44"/>
+<pinref part="P9" gate="G$1" pin="44"/>
 <pinref part="GND31" gate="1" pin="GND"/>
 <wire x1="25.4" y1="104.14" x2="27.94" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="104.14" x2="27.94" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="U$4" gate="G$1" pin="46"/>
+<pinref part="P9" gate="G$1" pin="46"/>
 <wire x1="27.94" y1="101.6" x2="27.94" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="101.6" x2="27.94" y2="101.6" width="0.1524" layer="91"/>
 <junction x="27.94" y="101.6"/>
 </segment>
 <segment>
 <pinref part="GND33" gate="1" pin="GND"/>
-<pinref part="U$4" gate="G$1" pin="1"/>
+<pinref part="P9" gate="G$1" pin="1"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="2"/>
+<pinref part="P9" gate="G$1" pin="2"/>
 <pinref part="GND32" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="1"/>
+<pinref part="DISP" gate="1" pin="1"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="SV2" gate="G$1" pin="2"/>
+<pinref part="IN" gate="G$1" pin="2"/>
 <pinref part="GND34" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -18562,7 +18562,7 @@ Based on the previous libraries:
 <pinref part="GND16" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-1" pin="1"/>
+<pinref part="PWR" gate="-1" pin="1"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -18623,19 +18623,19 @@ Based on the previous libraries:
 </segment>
 <segment>
 <pinref part="P+11" gate="1" pin="+5V"/>
-<pinref part="U$4" gate="G$1" pin="5"/>
+<pinref part="P9" gate="G$1" pin="5"/>
 <wire x1="-2.54" y1="157.48" x2="-2.54" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="152.4" x2="10.16" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="6"/>
+<pinref part="P9" gate="G$1" pin="6"/>
 <pinref part="P+12" gate="1" pin="+5V"/>
 <wire x1="25.4" y1="152.4" x2="38.1" y2="152.4" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="152.4" x2="38.1" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+13" gate="1" pin="+5V"/>
-<pinref part="SV1" gate="1" pin="2"/>
+<pinref part="DISP" gate="1" pin="2"/>
 <wire x1="274.32" y1="144.78" x2="276.86" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -18692,13 +18692,13 @@ Based on the previous libraries:
 <wire x1="73.66" y1="142.24" x2="76.2" y2="142.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="3"/>
+<pinref part="P9" gate="G$1" pin="3"/>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
 <wire x1="10.16" y1="154.94" x2="2.54" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="2.54" y1="154.94" x2="2.54" y2="157.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="4"/>
+<pinref part="P9" gate="G$1" pin="4"/>
 <pinref part="+3V9" gate="G$1" pin="+3V3"/>
 <wire x1="25.4" y1="154.94" x2="33.02" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="154.94" x2="33.02" y2="157.48" width="0.1524" layer="91"/>
@@ -18785,7 +18785,7 @@ Based on the previous libraries:
 <label x="182.88" y="60.96" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="19"/>
+<pinref part="P9" gate="G$1" pin="19"/>
 <wire x1="10.16" y1="134.62" x2="2.54" y2="134.62" width="0.1524" layer="91"/>
 <label x="2.54" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -18807,7 +18807,7 @@ Based on the previous libraries:
 <label x="182.88" y="58.42" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="20"/>
+<pinref part="P9" gate="G$1" pin="20"/>
 <wire x1="25.4" y1="134.62" x2="33.02" y2="134.62" width="0.1524" layer="91"/>
 <label x="33.02" y="134.62" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -18829,7 +18829,7 @@ Based on the previous libraries:
 <label x="182.88" y="53.34" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="15"/>
+<pinref part="P9" gate="G$1" pin="15"/>
 <wire x1="10.16" y1="139.7" x2="2.54" y2="139.7" width="0.1524" layer="91"/>
 <label x="2.54" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -18854,7 +18854,7 @@ Based on the previous libraries:
 <label x="182.88" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="23"/>
+<pinref part="P9" gate="G$1" pin="23"/>
 <wire x1="10.16" y1="129.54" x2="2.54" y2="129.54" width="0.1524" layer="91"/>
 <label x="2.54" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -18875,7 +18875,7 @@ Based on the previous libraries:
 <label x="182.88" y="50.8" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="28"/>
+<pinref part="P9" gate="G$1" pin="28"/>
 <wire x1="25.4" y1="124.46" x2="33.02" y2="124.46" width="0.1524" layer="91"/>
 <label x="33.02" y="124.46" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -18892,7 +18892,7 @@ Based on the previous libraries:
 <label x="127" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="25"/>
+<pinref part="P9" gate="G$1" pin="25"/>
 <wire x1="10.16" y1="127" x2="2.54" y2="127" width="0.1524" layer="91"/>
 <label x="2.54" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -18909,7 +18909,7 @@ Based on the previous libraries:
 <label x="182.88" y="48.26" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="29"/>
+<pinref part="P9" gate="G$1" pin="29"/>
 <wire x1="10.16" y1="121.92" x2="2.54" y2="121.92" width="0.1524" layer="91"/>
 <label x="2.54" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -18921,7 +18921,7 @@ Based on the previous libraries:
 <label x="170.18" y="119.38" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="30"/>
+<pinref part="P9" gate="G$1" pin="30"/>
 <wire x1="25.4" y1="121.92" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
 <label x="33.02" y="121.92" size="1.27" layer="95" xref="yes"/>
 </segment>
@@ -18938,7 +18938,7 @@ Based on the previous libraries:
 <label x="182.88" y="45.72" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$4" gate="G$1" pin="31"/>
+<pinref part="P9" gate="G$1" pin="31"/>
 <wire x1="10.16" y1="119.38" x2="2.54" y2="119.38" width="0.1524" layer="91"/>
 <label x="2.54" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -19012,7 +19012,7 @@ Based on the previous libraries:
 <wire x1="-27.94" y1="45.72" x2="-25.4" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X3" gate="-2" pin="1"/>
+<pinref part="PWR" gate="-2" pin="1"/>
 <pinref part="P+21" gate="1" pin="+24V"/>
 </segment>
 </net>
@@ -19092,7 +19092,7 @@ Based on the previous libraries:
 <wire x1="320.04" y1="71.12" x2="322.58" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="320.04" y1="63.5" x2="320.04" y2="71.12" width="0.1524" layer="91"/>
 <junction x="320.04" y="71.12"/>
-<pinref part="X2" gate="-2" pin="1"/>
+<pinref part="SPKR2" gate="-2" pin="1"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -19119,7 +19119,7 @@ Based on the previous libraries:
 <wire x1="320.04" y1="45.72" x2="322.58" y2="45.72" width="0.1524" layer="91"/>
 <wire x1="320.04" y1="55.88" x2="320.04" y2="45.72" width="0.1524" layer="91"/>
 <junction x="320.04" y="45.72"/>
-<pinref part="X2" gate="-1" pin="1"/>
+<pinref part="SPKR2" gate="-1" pin="1"/>
 </segment>
 </net>
 <net name="N$21" class="0">
@@ -19168,7 +19168,7 @@ Based on the previous libraries:
 <wire x1="320.04" y1="43.18" x2="322.58" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="320.04" y1="35.56" x2="320.04" y2="43.18" width="0.1524" layer="91"/>
 <junction x="320.04" y="43.18"/>
-<pinref part="X1" gate="-2" pin="1"/>
+<pinref part="SPKR1" gate="-2" pin="1"/>
 </segment>
 </net>
 <net name="SPKR1A" class="0">
@@ -19183,7 +19183,7 @@ Based on the previous libraries:
 <wire x1="320.04" y1="17.78" x2="322.58" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="320.04" y1="27.94" x2="320.04" y2="17.78" width="0.1524" layer="91"/>
 <junction x="320.04" y="17.78"/>
-<pinref part="X1" gate="-1" pin="1"/>
+<pinref part="SPKR1" gate="-1" pin="1"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -19235,7 +19235,7 @@ Based on the previous libraries:
 <net name="SDA5V" class="0">
 <segment>
 <pinref part="Q1" gate="G$1" pin="D"/>
-<pinref part="SV1" gate="1" pin="3"/>
+<pinref part="DISP" gate="1" pin="3"/>
 <wire x1="256.54" y1="142.24" x2="264.16" y2="142.24" width="0.1524" layer="91"/>
 <label x="259.08" y="142.24" size="1.27" layer="95"/>
 <pinref part="R14" gate="G$1" pin="1"/>
@@ -19249,7 +19249,7 @@ Based on the previous libraries:
 <pinref part="Q2" gate="G$1" pin="D"/>
 <wire x1="256.54" y1="127" x2="259.08" y2="127" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="127" x2="259.08" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="1" pin="4"/>
+<pinref part="DISP" gate="1" pin="4"/>
 <wire x1="259.08" y1="139.7" x2="269.24" y2="139.7" width="0.1524" layer="91"/>
 <label x="259.08" y="139.7" size="1.27" layer="95"/>
 <pinref part="R13" gate="G$1" pin="1"/>
@@ -19261,7 +19261,7 @@ Based on the previous libraries:
 <net name="RIGHT_INPUT" class="0">
 <segment>
 <pinref part="C7" gate="G$1" pin="-"/>
-<pinref part="SV2" gate="G$1" pin="3"/>
+<pinref part="IN" gate="G$1" pin="3"/>
 <wire x1="200.66" y1="147.32" x2="208.28" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="147.32" x2="208.28" y2="139.7" width="0.1524" layer="91"/>
 </segment>
@@ -19269,7 +19269,7 @@ Based on the previous libraries:
 <net name="LEFT_INPUT" class="0">
 <segment>
 <pinref part="C8" gate="G$1" pin="-"/>
-<pinref part="SV2" gate="G$1" pin="1"/>
+<pinref part="IN" gate="G$1" pin="1"/>
 <wire x1="200.66" y1="129.54" x2="208.28" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="208.28" y1="129.54" x2="208.28" y2="134.62" width="0.1524" layer="91"/>
 </segment>
