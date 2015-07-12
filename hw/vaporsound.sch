@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -18124,6 +18124,12 @@ Based on the previous libraries:
 <part name="P+21" library="supply1" deviceset="+24V" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="L7" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="R17" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
+<part name="R18" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
+<part name="+3V17" library="supply1" deviceset="+3V3" device=""/>
+<part name="GND17" library="supply1" deviceset="GND" device=""/>
+<part name="R19" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
+<part name="GND44" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -18274,10 +18280,10 @@ Based on the previous libraries:
 <instance part="+3V14" gate="G$1" x="172.72" y="86.36"/>
 <instance part="C42" gate="G$1" x="172.72" y="81.28"/>
 <instance part="C43" gate="G$1" x="165.1" y="81.28"/>
-<instance part="R15" gate="G$1" x="142.24" y="33.02" rot="R90"/>
-<instance part="+3V15" gate="G$1" x="142.24" y="40.64"/>
-<instance part="C44" gate="G$1" x="139.7" y="25.4"/>
-<instance part="GND40" gate="1" x="139.7" y="17.78" rot="MR0"/>
+<instance part="R15" gate="G$1" x="147.32" y="10.16" rot="R90"/>
+<instance part="+3V15" gate="G$1" x="147.32" y="17.78"/>
+<instance part="C44" gate="G$1" x="139.7" y="-5.08"/>
+<instance part="GND40" gate="1" x="139.7" y="-12.7" rot="MR0"/>
 <instance part="C45" gate="G$1" x="152.4" y="81.28"/>
 <instance part="+3V16" gate="G$1" x="152.4" y="86.36"/>
 <instance part="GND43" gate="1" x="152.4" y="73.66" rot="MR0"/>
@@ -18292,6 +18298,12 @@ Based on the previous libraries:
 <instance part="P+21" gate="1" x="78.74" y="66.04" rot="R270"/>
 <instance part="GND15" gate="1" x="48.26" y="63.5"/>
 <instance part="L7" gate="G$1" x="-20.32" y="45.72"/>
+<instance part="R17" gate="G$1" x="121.92" y="10.16" rot="R270"/>
+<instance part="R18" gate="G$1" x="121.92" y="-5.08" rot="R270"/>
+<instance part="+3V17" gate="G$1" x="121.92" y="17.78"/>
+<instance part="GND17" gate="1" x="121.92" y="-12.7" rot="MR0"/>
+<instance part="R19" gate="G$1" x="147.32" y="-5.08" rot="R90"/>
+<instance part="GND44" gate="1" x="147.32" y="-12.7" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -18553,6 +18565,14 @@ Based on the previous libraries:
 <pinref part="X3" gate="-1" pin="1"/>
 <pinref part="GND15" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R19" gate="G$1" pin="1"/>
+<pinref part="GND44" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="V+" class="0">
 <segment>
@@ -18707,6 +18727,10 @@ Based on the previous libraries:
 <pinref part="C45" gate="G$1" pin="1"/>
 <pinref part="+3V16" gate="G$1" pin="+3V3"/>
 </segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="+3V17" gate="G$1" pin="+3V3"/>
+</segment>
 </net>
 <net name="ADC_VREF" class="0">
 <segment>
@@ -18810,24 +18834,38 @@ Based on the previous libraries:
 <label x="2.54" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="134.62" y1="27.94" x2="139.7" y2="27.94" width="0.1524" layer="91"/>
-<label x="134.62" y="27.94" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R15" gate="G$1" pin="1"/>
+<label x="134.62" y="2.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="134.62" y1="2.54" x2="139.7" y2="2.54" width="0.1524" layer="91"/>
 <pinref part="C44" gate="G$1" pin="1"/>
-<wire x1="139.7" y1="27.94" x2="142.24" y2="27.94" width="0.1524" layer="91"/>
-<junction x="139.7" y="27.94"/>
+<wire x1="139.7" y1="-2.54" x2="139.7" y2="2.54" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="139.7" y1="2.54" x2="147.32" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="2.54" x2="147.32" y2="5.08" width="0.1524" layer="91"/>
+<junction x="139.7" y="2.54"/>
+<pinref part="R19" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="2.54" x2="147.32" y2="0" width="0.1524" layer="91"/>
+<junction x="147.32" y="2.54"/>
 </segment>
 </net>
 <net name="POWERDOWN" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="PWRDN"/>
 <wire x1="190.5" y1="33.02" x2="182.88" y2="33.02" width="0.1524" layer="91"/>
-<label x="182.88" y="33.02" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<label x="182.88" y="33.02" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="23"/>
 <wire x1="10.16" y1="129.54" x2="2.54" y2="129.54" width="0.1524" layer="91"/>
 <label x="2.54" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R18" gate="G$1" pin="1"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="121.92" y1="5.08" x2="121.92" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="2.54" x2="121.92" y2="0" width="0.1524" layer="91"/>
+<junction x="121.92" y="2.54"/>
+<wire x1="121.92" y1="2.54" x2="119.38" y2="2.54" width="0.1524" layer="91"/>
+<label x="119.38" y="2.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="D_AMP" class="0">
