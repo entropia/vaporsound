@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -58,42 +58,42 @@
 <library>
 <packages>
 <package name="POWERSSO-36">
-<smd name="P$1" x="-4.75" y="4.25" dx="2" dy="0.345" layer="1"/>
-<smd name="P$2" x="-4.75" y="3.75" dx="2" dy="0.345" layer="1"/>
-<smd name="P$3" x="-4.75" y="3.25" dx="2" dy="0.345" layer="1"/>
-<smd name="P$4" x="-4.75" y="2.75" dx="2" dy="0.345" layer="1"/>
-<smd name="P$5" x="-4.75" y="2.25" dx="2" dy="0.345" layer="1"/>
-<smd name="P$6" x="-4.75" y="1.75" dx="2" dy="0.345" layer="1"/>
-<smd name="P$7" x="-4.75" y="1.25" dx="2" dy="0.345" layer="1"/>
-<smd name="P$8" x="-4.75" y="0.75" dx="2" dy="0.345" layer="1"/>
-<smd name="P$9" x="-4.75" y="0.25" dx="2" dy="0.345" layer="1"/>
-<smd name="P$10" x="-4.75" y="-0.25" dx="2" dy="0.345" layer="1"/>
-<smd name="P$11" x="-4.75" y="-0.75" dx="2" dy="0.345" layer="1"/>
-<smd name="P$12" x="-4.75" y="-1.25" dx="2" dy="0.345" layer="1"/>
-<smd name="P$13" x="-4.75" y="-1.75" dx="2" dy="0.345" layer="1"/>
-<smd name="P$14" x="-4.75" y="-2.25" dx="2" dy="0.345" layer="1"/>
-<smd name="P$15" x="-4.75" y="-2.75" dx="2" dy="0.345" layer="1"/>
-<smd name="P$16" x="-4.75" y="-3.25" dx="2" dy="0.345" layer="1"/>
-<smd name="P$17" x="-4.75" y="-3.75" dx="2" dy="0.345" layer="1"/>
-<smd name="P$18" x="-4.75" y="-4.25" dx="2" dy="0.345" layer="1"/>
-<smd name="P$19" x="4.75" y="-4.25" dx="2" dy="0.345" layer="1"/>
-<smd name="P$20" x="4.75" y="-3.75" dx="2" dy="0.345" layer="1"/>
-<smd name="P$21" x="4.75" y="-3.25" dx="2" dy="0.345" layer="1"/>
-<smd name="P$22" x="4.75" y="-2.75" dx="2" dy="0.345" layer="1"/>
-<smd name="P$23" x="4.75" y="-2.25" dx="2" dy="0.345" layer="1"/>
-<smd name="P$24" x="4.75" y="-1.75" dx="2" dy="0.345" layer="1"/>
-<smd name="P$25" x="4.75" y="-1.25" dx="2" dy="0.345" layer="1"/>
-<smd name="P$26" x="4.75" y="-0.75" dx="2" dy="0.345" layer="1"/>
-<smd name="P$27" x="4.75" y="-0.25" dx="2" dy="0.345" layer="1"/>
-<smd name="P$28" x="4.75" y="0.25" dx="2" dy="0.345" layer="1"/>
-<smd name="P$29" x="4.75" y="0.75" dx="2" dy="0.345" layer="1"/>
-<smd name="P$30" x="4.75" y="1.25" dx="2" dy="0.345" layer="1"/>
-<smd name="P$31" x="4.75" y="1.75" dx="2" dy="0.345" layer="1"/>
-<smd name="P$32" x="4.75" y="2.25" dx="2" dy="0.345" layer="1"/>
-<smd name="P$33" x="4.75" y="2.75" dx="2" dy="0.345" layer="1"/>
-<smd name="P$34" x="4.75" y="3.25" dx="2" dy="0.345" layer="1"/>
-<smd name="P$35" x="4.75" y="3.75" dx="2" dy="0.345" layer="1"/>
-<smd name="P$36" x="4.75" y="4.25" dx="2" dy="0.345" layer="1"/>
+<smd name="P$1" x="-4.75" y="4.25" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$2" x="-4.75" y="3.75" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$3" x="-4.75" y="3.25" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$4" x="-4.75" y="2.75" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$5" x="-4.75" y="2.25" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$6" x="-4.75" y="1.75" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$7" x="-4.75" y="1.25" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$8" x="-4.75" y="0.75" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$9" x="-4.75" y="0.25" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$10" x="-4.75" y="-0.25" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$11" x="-4.75" y="-0.75" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$12" x="-4.75" y="-1.25" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$13" x="-4.75" y="-1.75" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$14" x="-4.75" y="-2.25" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$15" x="-4.75" y="-2.75" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$16" x="-4.75" y="-3.25" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$17" x="-4.75" y="-3.75" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$18" x="-4.75" y="-4.25" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$19" x="4.75" y="-4.25" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$20" x="4.75" y="-3.75" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$21" x="4.75" y="-3.25" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$22" x="4.75" y="-2.75" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$23" x="4.75" y="-2.25" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$24" x="4.75" y="-1.75" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$25" x="4.75" y="-1.25" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$26" x="4.75" y="-0.75" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$27" x="4.75" y="-0.25" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$28" x="4.75" y="0.25" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$29" x="4.75" y="0.75" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$30" x="4.75" y="1.25" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$31" x="4.75" y="1.75" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$32" x="4.75" y="2.25" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$33" x="4.75" y="2.75" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$34" x="4.75" y="3.25" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$35" x="4.75" y="3.75" dx="2" dy="0.3175" layer="1"/>
+<smd name="P$36" x="4.75" y="4.25" dx="2" dy="0.3175" layer="1"/>
 <smd name="PAD" x="0" y="0" dx="4.4" dy="6.8" layer="1" thermals="no"/>
 <wire x1="-3.7" y1="5.2" x2="3.7" y2="5.2" width="0.127" layer="21"/>
 <wire x1="3.7" y1="5.2" x2="3.7" y2="-5.2" width="0.127" layer="21"/>
@@ -147,7 +147,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="STA350BW">
+<deviceset name="STA350BW" prefix="U">
 <gates>
 <gate name="G$1" symbol="STA350BW" x="0" y="0"/>
 </gates>
