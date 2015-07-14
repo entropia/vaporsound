@@ -16245,6 +16245,11 @@ Based on the previous libraries:
 <part name="L4" library="custom-ind" deviceset="L-EU" device="SRR1210"/>
 <part name="L5" library="custom-ind" deviceset="L-EU" device="SRR1210"/>
 <part name="L6" library="custom-ind" deviceset="L-EU" device="IHLP-3232DZ-11"/>
+<part name="TEMP" library="con-lstb" deviceset="MA03-1" device=""/>
+<part name="GND44" library="supply1" deviceset="GND" device=""/>
+<part name="+3V18" library="supply1" deviceset="+3V3" device=""/>
+<part name="+3V19" library="supply1" deviceset="+3V3" device=""/>
+<part name="R19" library="rcl" deviceset="R-EU_" device="R0603" value="4k7"/>
 </parts>
 <sheets>
 <sheet>
@@ -16417,6 +16422,11 @@ Based on the previous libraries:
 <instance part="L4" gate="G$1" x="279.4" y="45.72" rot="R90"/>
 <instance part="L5" gate="G$1" x="279.4" y="71.12" rot="R90"/>
 <instance part="L6" gate="G$1" x="93.98" y="43.18" rot="R90"/>
+<instance part="TEMP" gate="G$1" x="325.12" y="111.76" rot="R180"/>
+<instance part="GND44" gate="1" x="314.96" y="114.3" rot="MR90"/>
+<instance part="+3V18" gate="G$1" x="307.34" y="127"/>
+<instance part="+3V19" gate="G$1" x="314.96" y="109.22" rot="R90"/>
+<instance part="R19" gate="G$1" x="307.34" y="119.38" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -16683,6 +16693,10 @@ Based on the previous libraries:
 <pinref part="R18" gate="G$1" pin="2"/>
 <pinref part="GND17" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="TEMP" gate="G$1" pin="1"/>
+<pinref part="GND44" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="V+" class="0">
 <segment>
@@ -16840,6 +16854,14 @@ Based on the previous libraries:
 <segment>
 <pinref part="R17" gate="G$1" pin="1"/>
 <pinref part="+3V17" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="TEMP" gate="G$1" pin="3"/>
+<pinref part="+3V19" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="R19" gate="G$1" pin="2"/>
+<pinref part="+3V18" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="ADC_VREF" class="0">
@@ -17422,6 +17444,22 @@ Based on the previous libraries:
 <pinref part="L7" gate="G$1" pin="2"/>
 <wire x1="17.78" y1="53.34" x2="15.24" y2="53.34" width="0.1524" layer="91"/>
 <junction x="17.78" y="53.34"/>
+</segment>
+</net>
+<net name="1WIRE" class="0">
+<segment>
+<pinref part="TEMP" gate="G$1" pin="2"/>
+<wire x1="317.5" y1="111.76" x2="307.34" y2="111.76" width="0.1524" layer="91"/>
+<label x="304.8" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R19" gate="G$1" pin="1"/>
+<wire x1="307.34" y1="111.76" x2="304.8" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="114.3" x2="307.34" y2="111.76" width="0.1524" layer="91"/>
+<junction x="307.34" y="111.76"/>
+</segment>
+<segment>
+<pinref part="P9" gate="G$1" pin="12"/>
+<wire x1="25.4" y1="144.78" x2="33.02" y2="144.78" width="0.1524" layer="91"/>
+<label x="33.02" y="144.78" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
