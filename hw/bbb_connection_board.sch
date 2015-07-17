@@ -5642,7 +5642,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </classes>
 <parts>
 <part name="P8" library="con-lstb-mod" deviceset="MA23-2" device=""/>
-<part name="POWER_SUPPLY" library="jumper" deviceset="JP1E" device=""/>
+<part name="PWR_IN" library="jumper" deviceset="JP1E" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
@@ -5671,7 +5671,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </plain>
 <instances>
 <instance part="P8" gate="G$1" x="40.64" y="68.58" rot="R180"/>
-<instance part="POWER_SUPPLY" gate="A" x="30.48" y="83.82" rot="MR270"/>
+<instance part="PWR_IN" gate="A" x="30.48" y="83.82" rot="MR270"/>
 <instance part="GND1" gate="1" x="25.4" y="66.04" rot="R270"/>
 <instance part="GND2" gate="1" x="45.72" y="66.04" rot="R90"/>
 <instance part="GND3" gate="1" x="35.56" y="83.82" rot="R90"/>
@@ -5707,7 +5707,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="POWER_SUPPLY" gate="A" pin="1"/>
+<pinref part="PWR_IN" gate="A" pin="1"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -5725,7 +5725,7 @@ BF959 corrected 2008.03.06&lt;br&gt;</description>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="POWER_SUPPLY" gate="A" pin="2"/>
+<pinref part="PWR_IN" gate="A" pin="2"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
