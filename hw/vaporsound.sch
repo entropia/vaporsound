@@ -16091,7 +16091,7 @@ Based on the previous libraries:
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
-<part name="L2" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="L2" library="rcl" deviceset="R-EU_" device="R0805" value="1uH"/>
 <part name="P+1" library="supply1" deviceset="V+" device=""/>
 <part name="P+2" library="supply1" deviceset="V+" device=""/>
 <part name="P+3" library="supply1" deviceset="V+" device=""/>
@@ -16099,28 +16099,28 @@ Based on the previous libraries:
 <part name="P+5" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
-<part name="C2" library="rcl" deviceset="C-EU" device="C0805"/>
+<part name="C2" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="P+6" library="supply1" deviceset="V+" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
-<part name="C4" library="rcl" deviceset="C-EU" device="C0805"/>
+<part name="C4" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
-<part name="C6" library="rcl" deviceset="C-EU" device="C0805"/>
+<part name="C6" library="rcl" deviceset="C-EU" device="C0805" value="10u"/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="C7" library="rcl" deviceset="CPOL-EU" device="E2-5" value="1u"/>
 <part name="C8" library="rcl" deviceset="CPOL-EU" device="E2-5" value="1u"/>
-<part name="C9" library="rcl" deviceset="C-EU" device="C0603"/>
-<part name="C10" library="rcl" deviceset="C-EU" device="C0603"/>
+<part name="C9" library="rcl" deviceset="C-EU" device="C0603" value="DNP"/>
+<part name="C10" library="rcl" deviceset="C-EU" device="C0603" value="DNP"/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="R0603"/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="R0603"/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="R0603" value="0R"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R0603" value="0R"/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="C11" library="rcl" deviceset="C-EU" device="C0603" value="100n"/>
 <part name="P+7" library="supply1" deviceset="+24V" device=""/>
@@ -16228,23 +16228,23 @@ Based on the previous libraries:
 <part name="C45" library="rcl" deviceset="C-EU" device="C1206" value="22u"/>
 <part name="+3V16" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND43" library="supply1" deviceset="GND" device=""/>
-<part name="R16" library="rcl" deviceset="R-EU_" device="R0603" value="0r"/>
+<part name="R16" library="rcl" deviceset="R-EU_" device="R0603" value="0R"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="SPKR1" library="con-phoenix-508" deviceset="MSTBV2" device=""/>
 <part name="SPKR2" library="con-phoenix-508" deviceset="MSTBV2" device=""/>
 <part name="PWR" library="con-phoenix-508" deviceset="MSTBV2" device=""/>
 <part name="P+21" library="supply1" deviceset="+24V" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
-<part name="L7" library="rcl" deviceset="R-EU_" device="R0805"/>
+<part name="L7" library="rcl" deviceset="R-EU_" device="R0805" value="1uH"/>
 <part name="R17" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
 <part name="R18" library="rcl" deviceset="R-EU_" device="R0603" value="DNP"/>
 <part name="+3V17" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
-<part name="L1" library="custom-ind" deviceset="L-EU" device="SRR1210"/>
-<part name="L3" library="custom-ind" deviceset="L-EU" device="SRR1210"/>
-<part name="L4" library="custom-ind" deviceset="L-EU" device="SRR1210"/>
-<part name="L5" library="custom-ind" deviceset="L-EU" device="SRR1210"/>
-<part name="L6" library="custom-ind" deviceset="L-EU" device="IHLP-3232DZ-11"/>
+<part name="L1" library="custom-ind" deviceset="L-EU" device="SRR1210" value="22u"/>
+<part name="L3" library="custom-ind" deviceset="L-EU" device="SRR1210" value="22u"/>
+<part name="L4" library="custom-ind" deviceset="L-EU" device="SRR1210" value="22u"/>
+<part name="L5" library="custom-ind" deviceset="L-EU" device="SRR1210" value="22u"/>
+<part name="L6" library="custom-ind" deviceset="L-EU" device="IHLP-3232DZ-11" value="22u"/>
 <part name="TEMP" library="con-lstb" deviceset="MA03-1" device=""/>
 <part name="GND44" library="supply1" deviceset="GND" device=""/>
 <part name="+3V18" library="supply1" deviceset="+3V3" device=""/>
