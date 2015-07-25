@@ -150,7 +150,7 @@
 <text x="2.794" y="33.274" size="1.9304" layer="25" font="vector" ratio="14" rot="SR270">GND</text>
 <text x="2.794" y="53.086" size="1.9304" layer="25" font="vector" ratio="14" rot="SR270">+24V</text>
 <text x="29.718" y="8.128" size="1.9304" layer="25" font="vector" ratio="14">entropia.de/vaporsound</text>
-<text x="55.372" y="11.43" size="1.6764" layer="25" font="vector" ratio="14">Rev. 0.1</text>
+<text x="55.372" y="11.43" size="1.6764" layer="25" font="vector" ratio="14">Rev. 0.2</text>
 <wire x1="15.875" y1="62.992" x2="15.875" y2="64.897" width="0.254" layer="25"/>
 <wire x1="25.146" y1="64.897" x2="25.146" y2="62.865" width="0.254" layer="25"/>
 <rectangle x1="37.592" y1="33.274" x2="51.816" y2="46.355" layer="30"/>
@@ -3514,7 +3514,8 @@ design rules under a new name.</description>
 <via x="83.82" y="42.672" extent="1-16" drill="0.3"/>
 <wire x1="88.773" y1="42.672" x2="90.805" y2="40.64" width="0.254" layer="1"/>
 <wire x1="90.805" y1="40.64" x2="95.25" y2="40.64" width="0.254" layer="1"/>
-<wire x1="82.804" y1="55.753" x2="82.675" y2="54.345" width="0" layer="19" extent="1-1"/>
+<wire x1="82.804" y1="55.753" x2="82.804" y2="54.238" width="0.254" layer="1"/>
+<wire x1="82.804" y1="54.238" x2="82.793" y2="54.227" width="0.254" layer="1"/>
 </signal>
 <signal name="RESET">
 <contactref element="U$1" pad="P$31"/>
