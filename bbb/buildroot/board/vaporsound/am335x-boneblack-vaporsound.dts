@@ -1,0 +1,129 @@
+/dts-v1/;
+
+#include "am33xx.dtsi"
+#include "am335x-bone-common.dtsi"
+
+/ {
+	model = "TI AM335x BeagleBone Black";
+	compatible = "ti,am335x-bone-black", "ti,am335x-bone", "ti,am33xx";
+};
+
+&ldo3_reg {
+	regulator-min-microvolt = <1800000>;
+	regulator-max-microvolt = <1800000>;
+	regulator-always-on;
+};
+
+&mmc1 {
+	vmmc-supply = <&vmmcsd_fixed>;
+};
+
+&gpio1 {
+	/* EMMC in reset */
+	emmc_rst {
+		gpio-hog;
+		gpios = <20 0>;
+		output-high;
+		line-name = "EMMC ResetN";
+	};
+
+	/* i2s master clock is always on */
+	i2s_mclk_on {
+		gpio-hog;
+		gpios = <27 0>;
+		output-high;
+		line-name = "I2S master clock on";
+	};
+};
+
+&rtc {
+	system-power-controller;
+};
+
+&am33xx_pinmux {
+	mcasp0_pins: mcasp0_pins {
+		pinctrl-single,pins = <
+			0x1ac (PIN_INPUT_PULLUP | MUX_MODE0)	/* mcasp0_ahclkx.mcasp0_ahclkx (MCK) */
+			0x19c (PIN_OUTPUT_PULLDOWN | MUX_MODE2) /* mcasp0_ahclkr.mcasp0_axr2 (D_AMP) */
+			0x194 (PIN_OUTPUT_PULLUP | MUX_MODE0)	/* mcasp0_fsx.mcasp0_fsx (LRCK) */
+			0x190 (PIN_OUTPUT_PULLDOWN | MUX_MODE0)	/* mcasp0_aclkx.mcasp0_aclkx (BCK) */
+			0x198 (PIN_INPUT_PULLUP | MUX_MODE0)    /* mcasp0_axr0.mcasp0_axr0 (D_ADC) */
+			0x06c (PIN_OUTPUT_PULLDOWN | MUX_MODE7)	/* gpmc_a11.GPIO1_27 */
+
+			0x074 (PIN_OUTPUT_PULLDOWN | MUX_MODE7) /* gpmc_wpn.GPIO0_31 (RESET) */
+			0x044 (PIN_OUTPUT_PULLDOWN | MUX_MODE7) /* gpmc_a1.GPIO1_17 (POWERDOWN) */
+		>;
+	};
+};
+
+&lcdc {
+	status = "okay";
+};
+
+&mcasp0	{
+#sound-dai-cells = <0>;
+	pinctrl-names = "default";
+	pinctrl-0 = <&mcasp0_pins>;
+	status = "okay";
+	op-mode = <0>;	/* MCASP_IIS_MODE */
+	tdm-slots = <2>;
+	serial-dir = <	/* 0: INACTIVE, 1: TX, 2: RX */
+			0 0 1 0 /* FIXME: axr0 inactive for now */
+		>;
+	tx-num-evt = <1>;
+	rx-num-evt = <1>;
+};
+
+&i2c2 {
+	clock-frequency = <10000>;
+
+	sta350: sta350@38 {
+		#sound-dai-cells = <0>;
+		compatible = "st,sta350";
+		reg = <0x1c>;
+		reset-gpios = <&gpio0 31 0>;
+		power-down-gpios = <&gpio1 17 0>;
+
+		vdd-dig-supply = <&fixed_internal_supply>;
+		vdd-pll-supply = <&fixed_internal_supply>;
+		vcc-supply = <&fixed_external_supply>;
+
+		st,max-power-correction;
+		st,distortion-compensation;
+		st,noise-shape-dc-cut;
+	};
+};
+
+/ {
+	sound {
+		compatible = "simple-audio-card";
+		simple-audio-card,name = "Vaporsound";
+		simple-audio-card,widgets =
+			"Speaker", "Speaker";
+		simple-audio-card,routing =
+			"Speaker", "Playback";
+		simple-audio-card,format = "i2s";
+		simple-audio-card,bitclock_master = <&sound_codec>;
+		simple-audio-card,frame_master = <&sound_cpu>;
+
+		sound_cpu: simple-audio-card,cpu {
+			sound-dai = <&mcasp0>;
+			system-clock-frequency = <24576000>;
+		};
+
+		sound_codec: simple-audio-card,codec {
+			sound-dai = <&sta350>;
+			system-clock-frequency = <24576000>;
+		};
+	};
+
+	fixed_external_supply: fixed-regulator {
+		compatible = "regulator-fixed";
+		regulator-name = "vaporsound_supply";
+	};
+
+	fixed_internal_supply: fixed-regulator {
+		compatible = "regulator-fixed";
+		regulator-name = "vaporsound_internal_supply";
+	};
+};

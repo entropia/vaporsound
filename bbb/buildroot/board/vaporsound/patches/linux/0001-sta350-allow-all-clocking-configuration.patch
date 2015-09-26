@@ -1,0 +1,31 @@
+From 3947d7c2b5d9161269317a9cc42aff5c713ca377 Mon Sep 17 00:00:00 2001
+From: Florian Larysch <fl@n621.de>
+Date: Sat, 26 Sep 2015 17:28:21 +0200
+Subject: [PATCH] sta350: allow all clocking configuration
+
+---
+ sound/soc/codecs/sta350.c | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/sound/soc/codecs/sta350.c b/sound/soc/codecs/sta350.c
+index 669e322..172346a 100644
+--- a/sound/soc/codecs/sta350.c
++++ b/sound/soc/codecs/sta350.c
+@@ -637,12 +637,14 @@ static int sta350_set_dai_fmt(struct snd_soc_dai *codec_dai,
+ 	struct sta350_priv *sta350 = snd_soc_codec_get_drvdata(codec);
+ 	unsigned int confb = 0;
+ 
++	/*
+ 	switch (fmt & SND_SOC_DAIFMT_MASTER_MASK) {
+ 	case SND_SOC_DAIFMT_CBS_CFS:
+ 		break;
+ 	default:
+ 		return -EINVAL;
+ 	}
++	*/
+ 
+ 	switch (fmt & SND_SOC_DAIFMT_FORMAT_MASK) {
+ 	case SND_SOC_DAIFMT_I2S:
+-- 
+2.5.3
+
