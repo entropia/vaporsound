@@ -3,4 +3,4 @@
 # 2014, Marcin Jabrzyk <marcin.jabrzyk@gmail.com>
 
 # copy the uEnv.txt to the output/images directory
-cp board/beaglebone/uEnv.txt $BINARIES_DIR/uEnv.txt
+cp ${BR2_EXTERNAL}/board/vaporsound/uEnv.txt $BINARIES_DIR/uEnv.txt
