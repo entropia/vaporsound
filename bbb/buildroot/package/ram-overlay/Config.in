@@ -1,0 +1,5 @@
+config BR2_PACKAGE_VAPORSOUND_RAM_OVERLAY
+	bool "Vaporsound RAM overlay tool"
+	help
+	  This tool mounts a RAM overlay filesystem over the root filesystem
+	  to allow it to be made readonly.
