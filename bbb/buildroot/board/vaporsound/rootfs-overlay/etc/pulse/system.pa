@@ -57,3 +57,5 @@ load-module module-suspend-on-idle
 load-module module-position-event-sounds
 
 load-module module-native-protocol-tcp auth-ip-acl=0.0.0.0/0 auth-anonymous=1
+
+load-module module-zeroconf-publish
