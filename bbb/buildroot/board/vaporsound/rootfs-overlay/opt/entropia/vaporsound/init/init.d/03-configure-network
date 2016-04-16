@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+if [ -f /boot/config/interfaces ]
+then
+	cat /boot/config/interfaces >> /etc/network/interfaces
+else
+	cat <<EOF >> /etc/network/interfaces
+auto eth0
+iface eth0 inet dhcp
+	wait-delay 15
+EOF
+fi

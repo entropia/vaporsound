@@ -1,0 +1,25 @@
+#!/bin/sh
+
+set -e
+
+if [ -f /boot/config/hostname ]
+then
+	HOSTNAME=$(cat /boot/config/hostname)
+else
+	MAC=$(cat /sys/class/net/eth0/address | tr : -)
+	HOSTNAME="vaporsound-$MAC"
+fi
+
+if [ -f /boot/config/domain ]
+then
+	DOMAIN=$(cat /boot/config/domain)
+else
+	DOMAIN="local"
+fi
+
+echo "$HOSTNAME" > /etc/hostname
+
+cat > /etc/hosts <<EOF
+127.0.0.1       localhost
+127.0.1.1       $HOSTNAME ${HOSTNAME}.${DOMAIN}
+EOF

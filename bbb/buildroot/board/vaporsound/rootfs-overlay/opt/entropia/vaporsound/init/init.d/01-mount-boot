@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+[ -d /boot ] || mkdir /boot
+
+mount /dev/mmcblk0p1 /boot
+
+if [ ! -d /boot/config ]
+then
+	echo "ERROR: /boot/config does not exist!"
+	exit 1
+fi

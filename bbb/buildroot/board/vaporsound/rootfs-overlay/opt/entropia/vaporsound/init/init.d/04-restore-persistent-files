@@ -1,0 +1,18 @@
+#!/bin/sh
+
+set -e
+
+[ -d /boot/state ] || mkdir /boot/state
+
+echo "Restoring SSH host key"
+
+if [ ! -f /boot/state/dropbear_ecdsa_host_key ]
+then
+	echo "Host key does not exist, generating"
+
+	dropbearkey -t ecdsa -f /boot/state/dropbear_ecdsa_host_key
+fi
+
+rm -f /etc/dropbear
+mkdir -p /etc/dropbear
+cp /boot/state/dropbear_ecdsa_host_key /etc/dropbear
