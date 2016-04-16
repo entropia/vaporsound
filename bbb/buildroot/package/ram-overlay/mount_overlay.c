@@ -68,8 +68,6 @@ int main(int argc, char **argv)
 	force(chroot("/"));
 
 	force(mount_move(OLDROOT_MP, "", "/dev"));
-	force(mount_move(OLDROOT_MP, "", "/tmp"));
-	force(mount_move(OLDROOT_MP, "", "/sys"));
 
 	return EXIT_SUCCESS;
 }
