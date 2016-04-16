@@ -1,3 +1,4 @@
 bootpart=0:1
 bootdir=
+console=ttyS0,115200n8
 uenvcmd=run loadimage;setenv fdtfile am335x-boneblack-vaporsound.dtb;run loadfdt; load mmc ${mmcdev} ${rdaddr} rootfs.cpio.uboot; run ramboot
