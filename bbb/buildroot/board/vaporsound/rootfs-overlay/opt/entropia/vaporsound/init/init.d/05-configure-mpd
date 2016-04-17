@@ -1,0 +1,35 @@
+#!/bin/sh
+
+set -e
+
+if [ ! -f /boot/config/mpd ]
+then
+	echo "no mpd config found, disabling"
+
+	rm /etc/init.d/S95mpd
+	exit 0
+fi
+
+HOSTNAME=$(cat /etc/hostname)
+
+. /boot/config/mpd
+
+cat > /etc/mpd.conf <<EOF
+zeroconf_name "MPD $HOSTNAME"
+
+music_directory "${MUSIC_DIRECTORY}"
+
+database {
+	plugin "proxy"
+	host "${PROXY_HOST}"
+}
+
+audio_output {
+	name "Vaporsound"
+	type "alsa"
+
+	device "hw:0,0"
+	mixer_type "hardware"
+	mixer_control "Master"
+}
+EOF
