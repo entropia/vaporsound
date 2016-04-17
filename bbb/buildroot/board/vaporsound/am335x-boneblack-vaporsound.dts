@@ -41,6 +41,7 @@
 };
 
 &am33xx_pinmux {
+	/* audio */
 	mcasp0_pins: mcasp0_pins {
 		pinctrl-single,pins = <
 			0x1ac (PIN_INPUT_PULLUP | MUX_MODE0)	/* mcasp0_ahclkx.mcasp0_ahclkx (MCK) */
@@ -54,6 +55,42 @@
 			0x044 (PIN_OUTPUT_PULLDOWN | MUX_MODE7) /* gpmc_a1.GPIO1_17 (POWERDOWN) */
 		>;
 	};
+
+	/* rotary encoder */
+	eqep2_pins: eqep2_pins {
+		pinctrl-single,pins = <
+			0x030 (PIN_INPUT_PULLUP | MUX_MODE4)    /* GPMC_AD12 -> eQEP2A_in (ENCODER_A) */
+			0x034 (PIN_INPUT_PULLUP | MUX_MODE4)    /* GPMC_AD13 -> eQEP2B_in (ENCODER_B) */
+		>;
+	};
+
+	/* PWM power led */
+	ehrpwm2_pins: ehrpwm2_pins {
+		pinctrl-single,pins = <
+			0x020 (PIN_OUTPUT_PULLDOWN | MUX_MODE4) /* GPMC_AD8 -> ehrpwm2A (PWR_LED) */
+		>;
+	};
+};
+
+&epwmss2 {
+	status = "okay";
+};
+
+&ehrpwm2 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&ehrpwm2_pins>;
+
+	status = "okay";
+};
+
+&eqep2 {
+	pinctrl-names = "default";
+	pinctrl-0 = <&eqep2_pins>;
+
+	clocks = <&dpll_core_m4_div2_ck>;
+	clock-names = "fck";
+
+	status = "okay";
 };
 
 &lcdc {
