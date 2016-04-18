@@ -101,7 +101,7 @@ index 0000000..e60f5be
 +		.stream_name	= "Capture",
 +		.channels_min	= 2,
 +		.channels_max	= 2,
-+		.rates		= SNDRV_PCM_RATE_8000_96000,
++		.rates		= SNDRV_PCM_RATE_48000 | SNDRV_PCM_RATE_64000 | SNDRV_PCM_RATE_96000,
 +		.formats	= SNDRV_PCM_FMTBIT_S24_LE,
 +	},
 +};
