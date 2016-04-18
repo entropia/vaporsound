@@ -90,6 +90,8 @@
 	clocks = <&dpll_core_m4_div2_ck>;
 	clock-names = "fck";
 
+	swap_inputs = <1>;
+
 	status = "okay";
 };
 
