@@ -136,22 +136,32 @@
 		compatible = "simple-audio-card";
 		simple-audio-card,name = "Vaporsound";
 		simple-audio-card,widgets =
-			"Speaker", "Speaker";
+			"Speaker", "Speaker",
+			"Line", "Line";
 		simple-audio-card,routing =
-			"Speaker", "Playback";
-		simple-audio-card,format = "i2s";
-		simple-audio-card,bitclock_master = <&sound_codec>;
-		simple-audio-card,frame_master = <&sound_cpu>;
+			"Speaker", "Playback",
+			"Line", "Capture";
 
-		sound_cpu: simple-audio-card,cpu {
-			sound-dai = <&mcasp0>;
-			system-clock-frequency = <24576000>;
-		};
+		simple-audio-card,dai-link {
+			format = "i2s";
+			bitclock_master = <&sound_codec>;
+			frame_master = <&sound_cpu>;
 
-		sound_codec: simple-audio-card,codec {
-			sound-dai = <&sta350>;
-			system-clock-frequency = <24576000>;
+			sound_cpu: cpu {
+				sound-dai = <&mcasp0>;
+				system-clock-frequency = <24576000>;
+			};
+
+			sound_codec: codec {
+				sound-dai = <&sta350>, <&pcm1808>;
+				system-clock-frequency = <24576000>;
+			};
 		};
+	};
+
+	pcm1808: pcm1808 {
+		#sound-dai-cells = <0>;
+		compatible = "ti,pcm1808";
 	};
 
 	fixed_external_supply: fixed-regulator {
