@@ -107,7 +107,7 @@
 	op-mode = <0>;	/* MCASP_IIS_MODE */
 	tdm-slots = <2>;
 	serial-dir = <	/* 0: INACTIVE, 1: TX, 2: RX */
-			0 0 1 0 /* FIXME: axr0 inactive for now */
+			2 0 1 0
 		>;
 	tx-num-evt = <1>;
 	rx-num-evt = <1>;
