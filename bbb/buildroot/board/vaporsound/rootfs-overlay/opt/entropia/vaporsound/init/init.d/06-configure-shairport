@@ -1,0 +1,19 @@
+#!/bin/sh
+
+set -e
+
+HOSTNAME=$(cat /etc/hostname)
+
+cat > /etc/shairport-sync.conf <<EOF
+general =
+{
+	name = "$HOSTNAME";
+        interpolation = "soxr";
+};
+
+alsa =
+{
+        output_device = "default";
+        mixer_control_name = "Master";
+};
+EOF
