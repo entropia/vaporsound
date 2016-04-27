@@ -2,4 +2,10 @@
 
 set -e
 
+if [ -f /boot/config/rwboot ]
+then
+	echo "config/rwboot exists, keeping boot writable!"
+	exit 0
+fi
+
 mount -o remount,ro /boot
