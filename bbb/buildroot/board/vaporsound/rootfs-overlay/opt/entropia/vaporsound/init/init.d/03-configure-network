@@ -13,6 +13,8 @@ iface eth0 inet dhcp
 EOF
 fi
 
+rm /etc/resolv.conf
+
 if [ -f /boot/config/resolv.conf ]
 then
 	cp /boot/config/resolv.conf /etc
