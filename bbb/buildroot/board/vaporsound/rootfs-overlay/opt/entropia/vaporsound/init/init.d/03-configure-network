@@ -12,3 +12,12 @@ iface eth0 inet dhcp
 	wait-delay 15
 EOF
 fi
+
+if [ -f /boot/config/resolv.conf ]
+then
+	cp /boot/config/resolv.conf /etc
+else
+	cat <<EOF > /etc/resolv.conf
+nameserver 8.8.8.8
+EOF
+fi
