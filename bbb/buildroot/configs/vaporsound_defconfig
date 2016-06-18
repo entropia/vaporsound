@@ -11,6 +11,7 @@ BR2_TARGET_GENERIC_GETTY_PORT="ttyS0"
 # BR2_TARGET_GENERIC_REMOUNT_ROOTFS_RW is not set
 BR2_ROOTFS_USERS_TABLES="$(BR2_EXTERNAL)/board/vaporsound/users_table.txt"
 BR2_ROOTFS_OVERLAY="$(BR2_EXTERNAL)/board/vaporsound/rootfs-overlay"
+BR2_ROOTFS_POST_BUILD_SCRIPT="$(BR2_EXTERNAL)/board/vaporsound/post-build.sh"
 BR2_ROOTFS_POST_IMAGE_SCRIPT="$(BR2_EXTERNAL)/board/vaporsound/post-image.sh"
 BR2_LINUX_KERNEL=y
 BR2_LINUX_KERNEL_CUSTOM_GIT=y
