@@ -1,24 +1,24 @@
+#include <math.h>
+
 #include <alsa/asoundlib.h>
 #include <alsa/mixer.h>
 
 #include "config.h"
 #include "volume.h"
+#include "volume_mapping.h"
 
-static snd_mixer_t *handle;
-static snd_mixer_selem_id_t *sid;
-static snd_mixer_elem_t* elem;
+#define DEFAULT_VOLUME 20
 
-static long min, max;
+static snd_mixer_elem_t* master;
 
 static int get_volume(const char *url, char **out)
 {
 	(void) url;
 
-	long vol;
-	snd_mixer_selem_get_playback_volume(elem, 0, &vol);
+	double vol = get_normalized_playback_volume(master, SND_MIXER_SCHN_MONO);
 
 	*out = malloc(64);
-	snprintf(*out, 64, "%ld", vol * 100 / max);
+	snprintf(*out, 64, "%ld", (long)round(100.0 * vol));
 
 	return 200;
 }
@@ -44,7 +44,7 @@ static int set_volume(const char *url, sb_t *data, char **out)
 		return 400;
 	}
 
-	snd_mixer_selem_set_playback_volume_all(elem, target_vol * max / 100);
+	set_normalized_playback_volume(master, SND_MIXER_SCHN_MONO, target_vol / 100.0, 1);
 
 	return 200;
 }
@@ -52,18 +52,19 @@ static int set_volume(const char *url, sb_t *data, char **out)
 static struct endpoint ep = {"/api/v1/volume", get_volume, set_volume};
 
 struct endpoint *volume_init(void) {
+	static snd_mixer_t *handle;
 	snd_mixer_open(&handle, 0);
 	snd_mixer_attach(handle, ALSA_CARD);
 	snd_mixer_selem_register(handle, NULL, NULL);
 	snd_mixer_load(handle);
 
+	static snd_mixer_selem_id_t *sid;
 	snd_mixer_selem_id_alloca(&sid);
 	snd_mixer_selem_id_set_index(sid, 0);
 	snd_mixer_selem_id_set_name(sid, ALSA_SELEM);
-	elem = snd_mixer_find_selem(handle, sid);
+	master = snd_mixer_find_selem(handle, sid);
 
-	snd_mixer_selem_get_playback_volume_range(elem, &min, &max);
+	set_normalized_playback_volume(master, SND_MIXER_SCHN_MONO, DEFAULT_VOLUME / 100.0, 1);
 
 	return &ep;
 }
-
