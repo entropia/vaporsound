@@ -1,0 +1,1 @@
+PS1='${LOGNAME}@${HOSTNAME}:${PWD}$ '
