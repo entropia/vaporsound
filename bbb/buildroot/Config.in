@@ -1,1 +1,2 @@
 source "$BR2_EXTERNAL/package/vaporctl/Config.in"
+source "$BR2_EXTERNAL/package/vaporui/Config.in"

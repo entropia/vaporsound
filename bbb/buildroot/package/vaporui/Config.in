@@ -1,0 +1,5 @@
+config BR2_PACKAGE_VAPORUI
+	bool "Vaporsound UI daemon"
+	select BR2_PACKAGE_LIBUBOX
+	help
+	  Vaporsound UI daemon
