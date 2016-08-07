@@ -28,7 +28,6 @@ audio_output {
 	name "Vaporsound"
 	type "alsa"
 
-	device "hw:0,0"
 	mixer_type "hardware"
 	mixer_control "Master"
 }
