@@ -1,8 +1,12 @@
 $(function() {
 
 	function do_update() {
-		$.get("/api/v1/volume", function(data) {
-			$("#volume").slider("option", "value", data);
+		$.ajax({
+			"url": "/api/v1/volume",
+			"dataType": "text",
+			"success": function(data) {
+				$("#volume").slider("option", "value", data);
+			}
 		});
 
 		setTimeout(do_update, 10000);
