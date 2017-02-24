@@ -1,0 +1,12 @@
+#!/bin/sh
+
+set -e
+
+if [ ! -f /boot/config/rc.local ]
+then
+	exit 0
+fi
+
+echo "rc.local found, executing"
+
+exec sh /boot/config/rc.local
