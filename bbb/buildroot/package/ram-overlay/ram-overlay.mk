@@ -7,7 +7,7 @@ RAM_OVERLAY_LICENSE = GPLv2
 
 define RAM_OVERLAY_BUILD_CMDS
 	$(TARGET_CC) $(TARGET_CFLAGS) $(TARGET_LDFLAGS) \
-		$(BR2_EXTERNAL)/package/ram-overlay/mount_overlay.c -o $(@D)/mount_ram_overlay
+		$(BR2_EXTERNAL_Vaporsound_PATH)/package/ram-overlay/mount_overlay.c -o $(@D)/mount_ram_overlay
 endef
 
 define RAM_OVERLAY_INSTALL_TARGET_CMDS

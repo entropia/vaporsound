@@ -6,7 +6,7 @@ VAPORCTL_VERSION = 1.0.0
 VAPORCTL_LICENSE = GPLv2
 
 define VAPORCTL_BUILD_CMDS
-	cp -r $(BR2_EXTERNAL)/package/vaporctl/* $(@D)
+	cp -r $(BR2_EXTERNAL_Vaporsound_PATH)/package/vaporctl/* $(@D)
 	make -C $(@D)/src CC="$(TARGET_CC)" CFLAGS="$(TARGET_CFLAGS)" LDFLAGS="$(TARGET_LDFLAGS)" all
 endef
 

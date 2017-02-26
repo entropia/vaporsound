@@ -1,2 +1,2 @@
-source "$BR2_EXTERNAL/package/vaporctl/Config.in"
-source "$BR2_EXTERNAL/package/vaporui/Config.in"
+source "$BR2_EXTERNAL_Vaporsound_PATH/package/vaporctl/Config.in"
+source "$BR2_EXTERNAL_Vaporsound_PATH/package/vaporui/Config.in"
